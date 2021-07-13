@@ -27,22 +27,5 @@ public class MoodAnalyzerTest
 			Assert.assertEquals(expected, actual);
 
 	}
-	// Test case for Null
-    @Test
-			public void givenMessage_whenNull_ShouldReturnNull()
-            {
-				String excepted = "Invalid message";
-				try
-				{
-					MoodAnalyzer moodAnalyzer = new MoodAnalyzer("Null");
-					moodAnalyzer.analyseMood();
-				}
-				catch (NullPointerException e) 
-				{
-					Assert.assertEquals(excepted, e.getMessage());
-				}
-
-			}
-
-		}
-
+}
+	
